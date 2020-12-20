@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP APA102C
+D RGB Full Color LED and Control IC
+K LED Smart Pixel RGB Color Light
+$ENDCMP
+#
+$CMP Teensy4.1
+D Teensy 4.1 symbol with extra headers removed, derived from XenGi's version found at: https://github.com/XenGi/teensy_library
+$ENDCMP
+#
+#End Doc Library

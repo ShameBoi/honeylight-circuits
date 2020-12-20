@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "Switch Debounce"
+Date "2020-11-12"
+Rev "1.0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Small C?
+U 1 1 5FCF18D5
+P 4500 3700
+AR Path="/5FCF18D5" Ref="C?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18D5" Ref="C2"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18D5" Ref="C4"  Part="1" 
+AR Path="/5FCF9984/5FCF18D5" Ref="C6"  Part="1" 
+F 0 "C2" H 4550 3600 50  0000 L CNN
+F 1 "10nF" V 4400 3700 39  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4500 3700 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCF18DB
+P 4500 3900
+AR Path="/5FCF18DB" Ref="#PWR?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18DB" Ref="#PWR025"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18DB" Ref="#PWR030"  Part="1" 
+AR Path="/5FCF9984/5FCF18DB" Ref="#PWR035"  Part="1" 
+F 0 "#PWR025" H 4500 3650 50  0001 C CNN
+F 1 "GND" H 4500 3750 39  0000 C CNN
+F 2 "" H 4500 3900 50  0001 C CNN
+F 3 "" H 4500 3900 50  0001 C CNN
+	1    4500 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3800 4500 3900
+$Comp
+L 74xGxx:74AHC1G14 U?
+U 1 1 5FCF18E2
+P 5500 3500
+AR Path="/5FCF18E2" Ref="U?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18E2" Ref="U2"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18E2" Ref="U3"  Part="1" 
+AR Path="/5FCF9984/5FCF18E2" Ref="U4"  Part="1" 
+F 0 "U2" H 5650 3600 50  0000 C CNN
+F 1 "74AHC1G14" H 5550 3400 39  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5500 3500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCF18E8
+P 5500 3100
+AR Path="/5FCF18E8" Ref="#PWR?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18E8" Ref="#PWR022"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18E8" Ref="#PWR027"  Part="1" 
+AR Path="/5FCF9984/5FCF18E8" Ref="#PWR032"  Part="1" 
+F 0 "#PWR022" H 5500 2950 50  0001 C CNN
+F 1 "+3V3" H 5500 3250 39  0000 C CNN
+F 2 "" H 5500 3100 50  0001 C CNN
+F 3 "" H 5500 3100 50  0001 C CNN
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCF18EE
+P 5300 3200
+AR Path="/5FCF18EE" Ref="C?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18EE" Ref="C1"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18EE" Ref="C3"  Part="1" 
+AR Path="/5FCF9984/5FCF18EE" Ref="C5"  Part="1" 
+F 0 "C1" V 5350 3250 50  0000 L CNN
+F 1 "100nF" V 5200 3200 39  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5300 3200 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3100 5500 3200
+Wire Wire Line
+	5400 3200 5500 3200
+Connection ~ 5500 3200
+Wire Wire Line
+	5500 3200 5500 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5FCF18F8
+P 5500 3700
+AR Path="/5FCF18F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18F8" Ref="#PWR024"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18F8" Ref="#PWR029"  Part="1" 
+AR Path="/5FCF9984/5FCF18F8" Ref="#PWR034"  Part="1" 
+F 0 "#PWR024" H 5500 3450 50  0001 C CNN
+F 1 "GND" H 5500 3550 39  0000 C CNN
+F 2 "" H 5500 3700 50  0001 C CNN
+F 3 "" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3600 5500 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5FCF18FF
+P 5100 3300
+AR Path="/5FCF18FF" Ref="#PWR?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF18FF" Ref="#PWR023"  Part="1" 
+AR Path="/5FCF5FEC/5FCF18FF" Ref="#PWR028"  Part="1" 
+AR Path="/5FCF9984/5FCF18FF" Ref="#PWR033"  Part="1" 
+F 0 "#PWR023" H 5100 3050 50  0001 C CNN
+F 1 "GND" H 5100 3150 39  0000 C CNN
+F 2 "" H 5100 3300 50  0001 C CNN
+F 3 "" H 5100 3300 50  0001 C CNN
+	1    5100 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3300 5100 3200
+Wire Wire Line
+	5100 3200 5200 3200
+$Comp
+L Device:R_Small R?
+U 1 1 5FCF1907
+P 4000 3300
+AR Path="/5FCF1907" Ref="R?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF1907" Ref="R1"  Part="1" 
+AR Path="/5FCF5FEC/5FCF1907" Ref="R3"  Part="1" 
+AR Path="/5FCF9984/5FCF1907" Ref="R5"  Part="1" 
+F 0 "R1" H 4050 3200 50  0000 L CNN
+F 1 "10K" V 4000 3300 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 3300 50  0001 C CNN
+F 3 "~" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FCF1F84
+P 4300 3500
+AR Path="/5FCF1F84" Ref="R?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF1F84" Ref="R2"  Part="1" 
+AR Path="/5FCF5FEC/5FCF1F84" Ref="R4"  Part="1" 
+AR Path="/5FCF9984/5FCF1F84" Ref="R6"  Part="1" 
+F 0 "R2" V 4400 3450 50  0000 R CNN
+F 1 "100" V 4300 3500 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4300 3500 50  0001 C CNN
+F 3 "~" H 4300 3500 50  0001 C CNN
+	1    4300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3500 4500 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4500 3500 4500 3600
+Wire Wire Line
+	4500 3500 5200 3500
+Text HLabel 3900 3500 0    39   Input ~ 0
+Switch
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCF3112
+P 4000 3100
+AR Path="/5FCF3112" Ref="#PWR?"  Part="1" 
+AR Path="/5FCE8FF5/5FCF3112" Ref="#PWR021"  Part="1" 
+AR Path="/5FCF5FEC/5FCF3112" Ref="#PWR026"  Part="1" 
+AR Path="/5FCF9984/5FCF3112" Ref="#PWR031"  Part="1" 
+F 0 "#PWR021" H 4000 2950 50  0001 C CNN
+F 1 "+3V3" H 4000 3250 39  0000 C CNN
+F 2 "" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3100 4000 3200
+Text Label 4650 3500 0    39   ~ 0
+Input-Filter
+Text HLabel 5850 3500 2    39   Output ~ 0
+Output
+Wire Wire Line
+	5750 3500 5850 3500
+Wire Wire Line
+	4000 3400 4000 3500
+Wire Wire Line
+	4000 3500 3900 3500
+Wire Wire Line
+	4000 3500 4200 3500
+Connection ~ 4000 3500
+$EndSCHEMATC

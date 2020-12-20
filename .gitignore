@@ -1,0 +1,9 @@
+.DS_Store
+*.bak
+*.kicad_pcb-bak
+*-cache.lib
+*.bck
+rescue-backup
+*.sch-bak
+*-rescue.dcm
+*.xml
